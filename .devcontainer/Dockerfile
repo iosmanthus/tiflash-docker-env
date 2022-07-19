@@ -44,6 +44,8 @@ RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - && \
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --profile minimal --default-toolchain nightly
 
+RUN git config --global --add safe.directory /workspaces/tiflash-docker-env/tiflash
+
 ENV CC=/usr/bin/clang-13
 ENV CPP=/usr/bin/clang-cpp-13
 ENV CXX=/usr/bin/clang++-13
