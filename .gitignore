@@ -1,2 +1,2 @@
-tiflash
-/.direnv
+*
+!/.devcontainer/
