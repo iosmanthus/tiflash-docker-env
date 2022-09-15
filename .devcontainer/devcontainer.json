@@ -18,8 +18,6 @@
 	"mounts": [
 		"source=/nix/store,target=/nix/store,type=bind,consistency=cached",
 		"source=${localEnv:HOME}/.tiup,target=${localEnv:HOME}/.tiup,type=bind,consistency=cached",
-		"source=${localEnv:HOME}/.gnupg,target=${localEnv:HOME}/.gnupg,type=bind,consistency=cached",
-		"source=${localEnv:HOME}/.ssh,target=${localEnv:HOME}/.ssh,type=bind,consistency=cached",
 		"source=${localWorkspaceFolder}/.devcontainer/.zshrc,target=${localEnv:HOME}/.zshrc,type=bind,consistency=cached"
 	],
 	"runArgs": [
