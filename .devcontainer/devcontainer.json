@@ -20,7 +20,8 @@
 	},
 	"mounts": [
 		"source=/nix/store,target=/nix/store,type=bind,consistency=cached",
-		"source=${localEnv:HOME}/.tiup,target=${localEnv:HOME}/.tiup,type=bind,consistency=cached"
+		"source=${localEnv:HOME}/.tiup,target=${localEnv:HOME}/.tiup,type=bind,consistency=cached",
+		"source=${localEnv:HOME}/.gnupg,target=${localEnv:HOME}/.gnupg,type=bind,consistency=cached"
 	],
 	"runArgs": [
 		"--cap-add=SYS_PTRACE"
