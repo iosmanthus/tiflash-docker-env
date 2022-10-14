@@ -11,7 +11,8 @@
 				"eamodio.gitlens"
 			],
 			"settings": {
-				"terminal.integrated.defaultProfile.linux": "zsh"
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"dev.containers.copyGitConfig": false
 			}
 		}
 	},
@@ -21,6 +22,7 @@
 		"source=${localWorkspaceFolder}/.devcontainer/.zshrc,target=${localEnv:HOME}/.zshrc,type=bind,consistency=cached"
 	],
 	"runArgs": [
-		"--cap-add=SYS_PTRACE"
+		"--cap-add=SYS_PTRACE",
+		"--network=host"
 	]
 }
